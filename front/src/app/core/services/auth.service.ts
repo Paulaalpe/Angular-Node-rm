@@ -27,7 +27,7 @@ public login(userLogin: IuserLogin ){
   return this.http.post<any>(`${this.endpoint}/login`, userLogin).subscribe((res) => {
     localStorage.setItem('access_token', res.token)
     this.currentUser = res;
-    this.router.navigate(['']);
+    this.router.navigate(['/episodios']);
   });
 }
 

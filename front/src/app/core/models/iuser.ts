@@ -1,5 +1,5 @@
 export interface Iuser {
-    _id: String;
+    // _id: String;
     name: String;
     email: String;
     password: String;
