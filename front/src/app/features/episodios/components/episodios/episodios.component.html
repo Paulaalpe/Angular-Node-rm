@@ -1,0 +1,10 @@
+<h1>Episodios disponibles en tu cuenta</h1>
+<div *ngFor="let episodio of episodiosList; let index = index">
+    <ul>
+        <li>
+            <p>{{episodio.name}}</p>
+            <p>{{episodio.air_date}}</p>
+            <p>{{episodio.episode}}</p>
+        </li>
+    </ul>   
+</div>

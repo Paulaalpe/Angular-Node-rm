@@ -1,0 +1,6 @@
+<h1>Characters</h1>
+<div>
+    <ng-container *ngFor="let characterIterator of dataInfo">
+        <app-character-card [character]="characterIterator"></app-character-card>
+    </ng-container>
+</div>

@@ -1,0 +1,18 @@
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-top: 3px double #483D8E;
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 8px;
+
+    p {
+        line-height: 1px;
+        margin: 10px;
+    }
+
+    span {
+        font-weight: bold;
+    }
+}

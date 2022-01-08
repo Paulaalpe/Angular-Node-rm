@@ -1,0 +1,33 @@
+<nav>
+    <div class="logo">
+        <a href="/">
+            <img src="../../../../assets/Logo_sombra.png">
+        </a>
+    </div>
+    <div class ="menu">
+        <ul>
+            <!-- <li>
+                <a routerLinkActive="active" routerLink="">Home</a>
+            </li> -->
+            <li>
+                <a routerLinkActive="active" routerLink="/about">¿Qué es R&M?</a>
+            </li>
+            <li>
+                <a routerLinkActive="active" routerLink="/personajes">Personajes</a>
+            </li>
+            <li>
+                <a *ngIf="this.authService.isLoggedIn" routerLinkActive="active" routerLink="episodios">Episodios</a>
+            </li>
+            <li>
+                <a *ngIf="!this.authService.isLoggedIn" routerLinkActive="active" routerLink="register">Registro</a>
+            </li>
+            <li>
+                <a *ngIf="!this.authService.isLoggedIn" routerLinkActive="active" routerLink="login">Login</a>
+            </li>
+            <li>
+                <a (click)="logout()" role="button" *ngIf="this.authService.isLoggedIn" routerLinkActive="active" routerLink="Logout">Cerrar sesión</a>
+            </li>
+        </ul>
+    </div>
+
+</nav>

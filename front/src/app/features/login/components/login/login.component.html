@@ -1,0 +1,15 @@
+<h1>Accede a tu cuenta</h1>
+<div class="container-form">
+    <form class="form-signin" [formGroup]="loginForm" (ngSubmit)="loginUser()">
+     <h3>Accede para ver los episodios de Rick and Morty. <br>Si aún no tienes cuenta regístrate <a href="http://localhost:4200/register">aquí</a></h3>
+        <div>
+            <label>Email</label>
+            <input type="email" class="form-control" formControlName="email" required>
+        </div>
+        <div>
+            <label>Contraseña</label>
+            <input type="password" class="form-control" formControlName="password">
+        </div>
+        <button type="submit">Acceder ahora</button>
+    </form>
+</div>

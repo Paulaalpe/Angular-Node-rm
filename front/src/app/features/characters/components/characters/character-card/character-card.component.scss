@@ -1,0 +1,30 @@
+.container {
+    max-width: 250px; 
+    min-height: 500px;
+    margin: 25px;
+    border: 2px solid  greenyellow;
+   
+    
+    h2,p {
+        text-align: center;
+    }
+
+   .nombre {
+       height: 100px;
+   } 
+
+    span {
+        font-style: italic;
+        font-size: large;
+        }
+
+
+    .img {
+        max-width: 100%;
+        
+        img {
+            width: 100%;
+        }
+    }
+
+}
