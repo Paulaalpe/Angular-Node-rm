@@ -1,1 +1,11 @@
-<p>planetas works!</p>
+<h1>Información de planetas</h1>
+<div *ngFor="let planeta of planetasList; let index = index">
+    <ul>
+        <li>
+            <p>Name: {{planeta.name}}</p>
+            <p>Type: {{planeta.type}}</p>
+            <p>Dimension: {{planeta.dimension}}</p>
+            
+        </li>
+    </ul>   
+</div>

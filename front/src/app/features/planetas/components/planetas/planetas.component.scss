@@ -1,0 +1,14 @@
+div {
+    display: inline-block;
+    
+    // flex-wrap: wrap;
+    // justify-content: center;
+    align-items: center;
+    width: 240px;
+    border: 2px solid  greenyellow;
+    margin: 30px 100px;
+
+    li {
+        list-style: none;
+    }
+}

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Icharacters } from 'src/app/core/models/icharacters';
+import { Icharacters } from 'src/app/features/characters/models/icharacters';
 import { HttpRequestService } from '../../services/http-request.service';
 
 @Component({
@@ -22,12 +22,13 @@ export class CharactersComponent implements OnInit {
     this.httpRequestService.getData(this.URL).subscribe(
       (data:any) => {
         const results : Icharacters[] = data.results;
-        const formattedResults = results.map(({ name, image, status, species, gender }) =>({
+        const formattedResults = results.map(({ name, image, status, species, gender, origin }) =>({
           name, 
           image,
           status,
           species,
-          gender
+          gender, 
+          origin
         }));
      this.dataInfo = formattedResults;
 

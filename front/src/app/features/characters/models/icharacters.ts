@@ -4,4 +4,7 @@ export interface Icharacters {
     status: string;
     species: string;
     gender: string;
+    origin: {
+        name: string;
+    };
 }

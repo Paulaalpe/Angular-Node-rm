@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Icharacters } from 'src/app/core/models/icharacters';
+import { Icharacters } from 'src/app/features/characters/models/icharacters';
 
 @Component({
   selector: 'app-character-card',

@@ -9,6 +9,7 @@ const { connect } = require("./utils/database/connect");
 // Express APIs
 const user = require('./api/routes/user.routes');
 const episodio = require ('./api/routes/episodio.routes');
+const planeta = require ('./api/routes/planeta.routes')
 
 //Ejecutamos la funcion que conecta con la db
 connect();
@@ -26,6 +27,7 @@ app.use('/public', express.static('public'));
 
 app.use('/api', user)
 app.use('/api', episodio)
+app.use('/api', planeta)
 
 // Definimos el puerto desde el dotenv y si no lo hubiera el 4000
 const port = process.env.PORT || 4000;

@@ -19,13 +19,16 @@
                 <a *ngIf="this.authService.isLoggedIn" routerLinkActive="active" routerLink="episodios">Episodios</a>
             </li>
             <li>
-                <a *ngIf="!this.authService.isLoggedIn" routerLinkActive="active" routerLink="register">Registro</a>
+                <a *ngIf="this.authService.isLoggedIn" routerLinkActive="active" routerLink="planetas">Planetas</a>
             </li>
             <li>
-                <a *ngIf="!this.authService.isLoggedIn" routerLinkActive="active" routerLink="login">Login</a>
+                <a style="color: blue; "*ngIf="!this.authService.isLoggedIn" routerLinkActive="active" routerLink="register">Registro</a>
             </li>
             <li>
-                <a (click)="logout()" role="button" *ngIf="this.authService.isLoggedIn" routerLinkActive="active" routerLink="Logout">Cerrar sesión</a>
+                <a style="color: blue;" *ngIf="!this.authService.isLoggedIn" routerLinkActive="active" routerLink="login">Login</a>
+            </li>
+            <li>
+                <a style="color: blue;" (click)="logout()" role="button" *ngIf="this.authService.isLoggedIn" routerLinkActive="active" routerLink="Logout">Cerrar sesión</a>
             </li>
         </ul>
     </div>
